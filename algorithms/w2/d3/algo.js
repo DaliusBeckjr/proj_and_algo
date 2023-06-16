@@ -81,14 +81,14 @@ class SLL{
     reverse(){
         if(this.head==null){
             return null;
-        }else{
-            let reverse = this.head.data;
-            let pointer = this.head.next;
-            while(pointer != null){
-                if(pointer.data = this.head.data){
-                    
-                }
-            }
+        }else if (this.head.next == null){
+            return null;
         }
+        let pointer = this.head.next;
+        while(pointer != null){
+            this.push_to_front(pointer.data);
+            pointer = pointer.next;
+        }
+        
     }
 }
