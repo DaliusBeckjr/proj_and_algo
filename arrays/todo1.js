@@ -19,22 +19,39 @@
 // ------------------------------------------------------------ //
 
 
-function popFront(array) {
-    if (array.length > 0) {
-      let removedValue = array[0];  // Store the value to be removed
-      array = array.slice(1);  // Create a new array starting from index 1
+// function popFront(array) {
+//     if (array.length > 0) {
+//       let removedValue = array[0];  // Store the value to be removed
+//       array = array.slice(1);  // Create a new array starting from index 1
 
-      console.log("Removed value:", removedValue);  // Print the removed value
-      console.log("Updated array:", array);  // Print the updated array
+//       console.log("Removed value:", removedValue);  // Print the removed value
+//       console.log("Updated array:", array);  // Print the updated array
 
-        return removedValue;
-        } else {
-        console.log("Array is empty.");
-        return undefined;
-        }
-    }
+//         return removedValue;
+//         } else {
+//         console.log("Array is empty.");
+//         return undefined;
+//         }
+//     }
     
-    let myArray = [0, 5, 10, 15];
-    let removed = popFront(myArray);
+//     let myArray = [0, 5, 10, 15];
+//     let removed = popFront(myArray);
 
-  console.log("Returned value:", removed);  // Print the returned value
+//   console.log("Returned value:", removed);  // Print the returned value
+
+// -----------------------------------------------------------//
+
+function insertAt(array, index, value) {
+  let newArray = [...array];  // Create a new array to preserve the original
+
+  newArray.splice(index, 0, value);  // Insert the value at the given index
+
+  return newArray;
+}
+
+let myArray = [100, 200, 5];
+let insertIndex = 2;
+let newValue = 311;
+let updatedArray = insertAt(myArray, insertIndex, newValue);
+
+console.log(updatedArray);  // Print the updated array
