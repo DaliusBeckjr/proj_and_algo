@@ -27,7 +27,7 @@ Using FOR, print multiples of 3 from -300 to 0. Skip -3 and -6.
 Print integers from 2000 to 5280, using a WHILE.
 
 
-You Say It’s Your Birthday
+# You Say It’s Your Birthday
 
 If 2 given numbers represent your birth month and day in either order, log "How did you know?", else log "Just another day...." 
 
