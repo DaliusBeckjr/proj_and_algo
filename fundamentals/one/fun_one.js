@@ -69,3 +69,32 @@
 
 // console.log(doWhile())
 
+// You Say It’s Your Birthday
+
+// If 2 given numbers represent your birth month and day in either order, log "How did you know?", else log "Just another day...." 
+
+// function isBirthday(dateString1, dateString2) {
+//     // Convert the first character of dateString1 to a number
+//     const month1 = dateString1[0] - '0';
+
+//     // Convert the remaining characters of dateString1 to a number
+//     const day1 = (dateString1[1] - '0') * 10 + (dateString1[2] - '0');
+
+//     // Convert the first character of dateString2 to a number
+//     const month2 = dateString2[0] - '0';
+
+//     // Convert the remaining characters of dateString2 to a number
+//     const day2 = (dateString2[1] - '0') * 10 + (dateString2[2] - '0');
+
+//     // Check if either combination matches
+//     if ((month1 === 1 && day1 === 25) || (month1 === 25 && day1 === 1) ||
+//         (month2 === 1 && day2 === 25) || (month2 === 25 && day2 === 1)) {
+//       console.log("How did you know?");
+//     } else {
+//       console.log("Just another day....");
+//     }
+// }
+
+//   // Test cases
+//   isBirthday("125", "42"); // Output: "How did you know?"
+//   isBirthday("35", "12");  // Output: "Just another day...."
