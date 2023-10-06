@@ -12,6 +12,8 @@
 
 // day 2 / 365 
 
+// key reminder: I only know basic js to solve these problems
+
 
 function XO(str) {
 
